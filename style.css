@@ -10,7 +10,6 @@ body {
   background: #f5f6f7;
 }
 
-
 /* ================= NAVBAR ================= */
 .navbar {
   position: absolute;
@@ -22,7 +21,7 @@ body {
   align-items: center;
   justify-content: space-between;
 
-  z-index: 50; 
+  z-index: 50;
 }
 
 .logo {
@@ -43,7 +42,7 @@ body {
 }
 
 .contact {
-  background: rgba(255,255,255,0.18);
+  background: rgba(255, 255, 255, 0.18);
   border: none;
   color: white;
   padding: 10px 18px;
@@ -62,17 +61,13 @@ body {
   cursor: pointer;
 }
 
-
 /* ================= HERO ================= */
 .hero {
   position: relative;
 
-  /* fixed spacing instead of vh */
-.hero {
-  position: relative;
-
-  padding-top: 140px;
-  padding-bottom: 120px;
+  /* IMPORTANT: no vh usage */
+  padding-top: 170px;
+  padding-bottom: 260px;
 
   background: url("images/bgimg.png") center/cover no-repeat;
 
@@ -82,14 +77,13 @@ body {
   text-align: center;
   color: white;
 }
-}
 
 /* dark overlay */
 .hero::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.45);
+  background: rgba(0, 0, 0, 0.45);
   z-index: 0;
 }
 
@@ -98,14 +92,13 @@ body {
   z-index: 2;
 }
 
-
 /* ================= ANNOUNCEMENT ================= */
 .announcement {
   display: flex;
   align-items: center;
   gap: 10px;
 
-  background: rgba(0,0,0,0.25);
+  background: rgba(0, 0, 0, 0.25);
   padding: 8px 16px;
   border-radius: 999px;
 
@@ -122,7 +115,7 @@ body {
 }
 
 .circle {
-  background: rgba(255,255,255,0.3);
+  background: rgba(255, 255, 255, 0.3);
   width: 18px;
   height: 18px;
   border-radius: 50%;
@@ -132,7 +125,6 @@ body {
   justify-content: center;
   font-size: 12px;
 }
-
 
 /* ================= HERO TEXT ================= */
 .hero h1 {
@@ -149,20 +141,20 @@ body {
   margin-bottom: 40px;
 }
 
-
 /* ================= EMAIL BOX ================= */
 .email-box {
   display: flex;
   align-items: center;
 
-  background: rgba(255,255,255,0.18);
+  background: rgba(255, 255, 255, 0.18);
   backdrop-filter: blur(8px);
 
   padding: 8px;
   border-radius: 999px;
 
-  margin-bottom: 90px;
+  margin-bottom: 80px;
 }
+
 .email-box input {
   border: none;
   outline: none;
@@ -186,17 +178,20 @@ body {
   cursor: pointer;
 }
 
-
-/* ================= FLOATING DOC IMAGE ================= */
+/* ================= FLOATING HERO IMAGE ================= */
 .hero-image-wrapper {
-  margin-top: 80px;              
+  position: absolute;
+  bottom: -140px;
+  left: 50%;
+  transform: translateX(-50%);
+
   width: 82%;
   max-width: 1150px;
 
   border-radius: 20px;
   overflow: hidden;
 
-  box-shadow: 0 40px 90px rgba(0,0,0,0.35);
+  box-shadow: 0 40px 90px rgba(0, 0, 0, 0.35);
 }
 
 .hero-image-wrapper img {
@@ -204,20 +199,19 @@ body {
   display: block;
 }
 
-
 /* ================= TRUSTED BY ================= */
 .trusted-by {
   width: 100%;
   background: linear-gradient(
     to bottom,
-    rgba(245,246,247,0) 0%,
+    rgba(245, 246, 247, 0) 0%,
     #f5f6f7 40%
   );
 
   display: flex;
   justify-content: center;
 
-  padding-top: 260px; 
+  padding-top: 260px;
   padding-bottom: 160px;
 }
 
