@@ -1,5 +1,9 @@
 # Mintlify Landing Page Clone
 
+🔗 **Live Demo:**  
+https://gunjanbasak007.github.io/Mintlify-Landing-Page/
+
+This project is a **static recreation of the Mintlify website landing page** built using only **HTML and CSS** (no JavaScript), as instructed in the cohort guidelines.
 A **pixel-inspired frontend clone** of the Mintlify landing page built using **pure HTML and CSS**.
 
 This project focuses on:
