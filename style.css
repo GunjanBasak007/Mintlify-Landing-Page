@@ -82,6 +82,7 @@ body {
   text-align: center;
   color: white;
 }
+}
 
 /* dark overlay */
 .hero::before {
